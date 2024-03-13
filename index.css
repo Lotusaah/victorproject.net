@@ -1,0 +1,202 @@
+body{
+  font-family: arial;
+  background-color: #B3D0C2;
+  position: relative;
+}
+.css-header{
+  padding-top: 50px;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  height: 200px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.266);
+  transition: all 0.5s ease-in-out 0s;
+}
+.css-header:hover{
+  text-shadow:0px 0px 20px rgba(0, 0, 0, 0.486);
+}
+.sub-header{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+  font-size: 40px;
+}
+.center-page-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+}
+.center-page-grid > div {
+  font-weight: bold;
+  height: 400px;
+  text-align: center;
+}
+.grid-color-gray{
+  background-color: #3d5a6c94;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #404a566a;
+}
+.CAD-title-css{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.CAD-paragraph{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  margin-top: 130px;
+  font-weight: 100;
+}
+.CAD-right-css{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.CAD-right-css > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CAD-right-css img{
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out 0s;
+}
+.CAD-topleft-img{
+  width: 180px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.505);
+}
+.CAD-topleft-img:hover{
+  box-shadow: 0px 0px 7.5px white;
+}
+.MATLAB-left-css{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  transition: all 0.5s ease-in-out 0s;
+}
+.MATLAB-file{
+  height: 350px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.529);
+  transition: all 0.2s ease-in-out 0s;
+}
+.MATLAB-file:hover{
+  box-shadow: 0px 0px 7.5px rgba(255, 255, 255, 0.733);
+}
+
+.MATLAB-title-css{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.MATLAB-paragraph-css{
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 130px;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+
+.css-bottom-section{
+  font-weight: bold;
+  margin: 50px;
+  text-align: center;
+}
+
+.css-bottom-closing {
+  /*position: absolute;*/
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: rgb(208, 208, 208);
+  margin-top: j0px;
+  font-family: arial;
+  font-size: 12px;
+  background-color: #404A56;
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.452);
+}
+
+/*nav bar css below*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  position: relative;
+}
+nav{
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color:rgb(224, 224, 224);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  font-family: Arial;
+  height: 50px;
+  padding: 0 5px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+nav a:hover{
+  border-radius: 5px;
+  background-color: lightgrey;
+  transition: all 0.2s ease-in-out 0s;
+}
+nav a:active{
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.542);
+  transition: all 0.2s ease-in-out 0s;
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sideBar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.423);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sideBar li{
+  width: 100%;
+}
+
+.sideBar a{
+  width: 100%;
+}
+@media(max-width: 800px) {
+  .hideOnMobile{
+    display: none;
+  }
+}
+@media(max-width: 400px) {
+  .sideBar{
+    width: 100%;
+  }
+}
